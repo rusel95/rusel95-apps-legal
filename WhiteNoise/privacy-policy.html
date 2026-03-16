@@ -85,7 +85,7 @@
 <body>
     <div class="container">
         <h1>White Sound Privacy Policy</h1>
-        <p class="effective-date">Effective date: 2025-09-16</p>
+        <p class="effective-date">Effective date: 2026-03-16</p>
 
         <p>This Privacy Policy explains how the White Sound mobile application (the "App") collects, uses, and shares information. If you do not agree with this policy, please do not use the App.</p>
 
@@ -94,6 +94,8 @@
             <li>We don't create accounts or ask for your name or email.</li>
             <li>Sound preferences (e.g., volumes, selected variants) are stored locally on your device.</li>
             <li>Purchases are handled by Apple; we use RevenueCat to manage subscription status (entitlements).</li>
+            <li>We use PostHog (EU servers) to collect anonymous usage analytics such as which sounds you play and how you use the timer. This data is not linked to your identity.</li>
+            <li>We use Sentry to collect crash reports and performance diagnostics. This data is not linked to your identity.</li>
             <li>We don't sell your data. We do not use third‑party advertising networks.</li>
         </ul>
 
@@ -106,18 +108,29 @@
                     <li><strong>Retention:</strong> on your device until you delete the App or reset data.</li>
                 </ul>
             </li>
-            <li><strong>Purchase & subscription data</strong>
+            <li><strong>Purchase &amp; subscription data</strong>
                 <ul>
                     <li><strong>What:</strong> transaction receipts and subscription status from Apple; app/device identifiers (e.g., IDFV) and purchase metadata via RevenueCat.</li>
                     <li><strong>Purpose:</strong> verify eligibility, activate trial, unlock or restore subscription, prevent fraud, and support purchases across devices.</li>
                     <li><strong>Retention:</strong> kept as necessary to operate subscriptions and comply with legal/financial obligations.</li>
                 </ul>
             </li>
-            <li><strong>Diagnostics (optional)</strong>
+            <li><strong>Usage analytics</strong>
                 <ul>
-                    <li><strong>What:</strong> crash logs, performance, and basic device context (OS version, app version). These may be provided by Apple and/or a diagnostics provider.</li>
+                    <li><strong>What:</strong> anonymous in-app events such as which sounds are played, timer usage, paywall interactions, and session length. Collected via PostHog, hosted on EU servers.</li>
+                    <li><strong>Purpose:</strong> understand how the App is used in order to improve features and user experience.</li>
+                    <li><strong>Linked to identity:</strong> No. Events are associated with an anonymous device-level identifier only.</li>
+                    <li><strong>Used for tracking:</strong> No. Data is not used to track you across other apps or websites.</li>
+                    <li><strong>Retention:</strong> per PostHog's data retention policy.</li>
+                </ul>
+            </li>
+            <li><strong>Crash reports &amp; diagnostics</strong>
+                <ul>
+                    <li><strong>What:</strong> crash logs, error traces, and basic device context (OS version, app version) collected via Sentry.</li>
                     <li><strong>Purpose:</strong> improve stability and performance, investigate issues, and support users.</li>
-                    <li><strong>Retention:</strong> limited per provider's policies.</li>
+                    <li><strong>Linked to identity:</strong> No.</li>
+                    <li><strong>Used for tracking:</strong> No.</li>
+                    <li><strong>Retention:</strong> per Sentry's data retention policy.</li>
                 </ul>
             </li>
         </ol>
@@ -128,15 +141,17 @@
         <ul>
             <li>Run and improve the App (mixing sounds, timers, background playback).</li>
             <li>Manage access to premium features (trial and subscription).</li>
-            <li>Handle support and investigate technical issues.</li>
+            <li>Understand feature usage to prioritise improvements (analytics).</li>
+            <li>Handle support and investigate technical issues (crash reports).</li>
             <li>Comply with law and prevent fraud.</li>
         </ul>
 
         <h2>Sharing of Information</h2>
         <ul>
             <li><strong>Apple (App Store / In‑App Purchases):</strong> to process payments and manage subscriptions.</li>
-            <li><strong>RevenueCat (Subscription Management):</strong> to verify entitlements, apply trials/offers, and restore purchases.</li>
-            <li><strong>Diagnostics providers (if enabled):</strong> to collect crash/performance data.</li>
+            <li><strong>RevenueCat (Subscription Management):</strong> to verify entitlements, apply trials/offers, and restore purchases. <a href="https://www.revenuecat.com/privacy">Privacy Policy</a></li>
+            <li><strong>PostHog (Product Analytics):</strong> to collect anonymous usage events. Data is stored on EU servers and is not linked to your identity. <a href="https://posthog.com/privacy">Privacy Policy</a></li>
+            <li><strong>Sentry (Crash Reporting):</strong> to collect crash logs and performance diagnostics. Data is not linked to your identity. <a href="https://sentry.io/privacy/">Privacy Policy</a></li>
             <li>We do not sell personal information. We do not share with ad networks.</li>
         </ul>
 
@@ -154,12 +169,13 @@
         <p>We use reasonable safeguards to protect information. No method of transmission or storage is 100% secure.</p>
 
         <h2>International Transfers</h2>
-        <p>Service providers may process information in countries other than your own. We rely on appropriate safeguards where required by law.</p>
+        <p>PostHog data is stored on EU servers. Other service providers may process information in countries other than your own. We rely on appropriate safeguards where required by law.</p>
 
         <h2>Data Retention</h2>
         <ul>
             <li>Local preferences remain on your device until you delete the App or reset data.</li>
             <li>Purchase records and entitlements are retained as needed to operate subscriptions and for legal/accounting requirements.</li>
+            <li>Analytics events (PostHog) and crash reports (Sentry) are retained per each provider's data retention policy.</li>
         </ul>
 
         <h2>Third‑Party Policies</h2>
@@ -167,7 +183,8 @@
             <li>Apple: <a href="https://www.apple.com/privacy/">https://www.apple.com/privacy/</a></li>
             <li>Apple Media Services Terms: <a href="https://www.apple.com/legal/internet-services/itunes/">https://www.apple.com/legal/internet-services/itunes/</a></li>
             <li>RevenueCat: <a href="https://www.revenuecat.com/privacy">https://www.revenuecat.com/privacy</a></li>
-            <li>(If used) Diagnostics provider, e.g., Sentry: <a href="https://sentry.io/privacy/">https://sentry.io/privacy/</a></li>
+            <li>PostHog: <a href="https://posthog.com/privacy">https://posthog.com/privacy</a></li>
+            <li>Sentry: <a href="https://sentry.io/privacy/">https://sentry.io/privacy/</a></li>
         </ul>
 
         <h2>Changes to This Policy</h2>
