@@ -4,77 +4,136 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Support - MediaCleaner</title>
+    <title>Support - Compresso</title>
     <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
         body {
-            font-family: -apple-system, sans-serif;
-            padding: 20px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
             line-height: 1.6;
-            max-width: 800px;
-            margin: 0 auto;
             color: #333;
+            background-color: #fff;
+            padding: 20px;
         }
 
-        h1 {
-            border-bottom: 2px solid #eee;
-            padding-bottom: 10px;
-        }
-
-        h2 {
-            margin-top: 30px;
-            color: #0066cc;
-        }
-
-        .faq-item {
-            margin-bottom: 20px;
-            background: #f9f9f9;
-            padding: 15px;
-            border-radius: 8px;
-        }
-
-        .question {
-            font-weight: bold;
-            margin-bottom: 5px;
-        }
+        .container { max-width: 800px; margin: 0 auto; padding: 40px 20px; }
+        h1 { font-size: 32px; margin-bottom: 10px; color: #1a1a1a; }
+        h2 { font-size: 22px; margin-top: 36px; margin-bottom: 12px; color: #1a1a1a; }
+        p { margin-bottom: 16px; }
+        ul { margin: 0 0 16px 24px; }
+        li { margin-bottom: 8px; }
+        a { color: #0066cc; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .lang { font-size: 15px; margin-bottom: 28px; color: #666; }
+        .faq-item { margin-bottom: 26px; }
+        .question { font-weight: 600; color: #1a1a1a; margin-bottom: 6px; }
+        .contact { background: #f4f8ff; border-left: 3px solid #0066cc; padding: 16px 20px; margin-top: 30px; }
     </style>
 </head>
 
 <body>
-    <h1>MediaCleaner Support</h1>
-    <p>Need help? Find answers below or contact our support team.</p>
+    <div class="container">
+        <nav class="lang"><strong>English</strong> &middot; <a href="support.uk.html">Українська</a> &middot; <a
+                href="support.ru.html">Русский</a></nav>
 
-    <h2>Frequently Asked Questions</h2>
+        <h1>Compresso Support</h1>
+        <p>Compresso frees up storage by compressing the photos and videos you already have, instead of asking you to
+            delete them.</p>
 
-    <div class="faq-item">
-        <div class="question">I accidentally deleted a photo. Can I get it back?</div>
-        <p>Yes, in most cases! MediaCleaner deletes files by moving them to your iOS <strong>"Recently Deleted"</strong>
-            album. Open your Photos app, go to Albums -> Recently Deleted, and you can recover them there. They
-            typically stay there for 30 days.</p>
+        <h2>Getting started</h2>
+        <p>Your library is grouped by month, so you never face all of it at once. Open a month and swipe each item:</p>
+        <ul>
+            <li><strong>Right</strong> — keep it exactly as it is.</li>
+            <li><strong>Down</strong> — compress it.</li>
+            <li><strong>Left</strong> — delete it.</li>
+        </ul>
+
+        <h2>Frequently asked questions</h2>
+
+        <div class="faq-item">
+            <div class="question">What happens to my original when I compress a photo?</div>
+            <p>Nothing, at first. Compresso saves the compressed copy as a <em>new</em> item and leaves your original
+                alone, so you can compare them side by side. The original is only removed when you explicitly choose to
+                replace it — and even then it goes to <strong>Recently Deleted</strong>, where iOS keeps it for about 30
+                days.</p>
+        </div>
+
+        <div class="faq-item">
+            <div class="question">I compressed a lot, but my iPhone storage hasn't changed. Why?</div>
+            <p>Almost always because the originals are still sitting in <strong>Recently Deleted</strong>. iOS holds
+                them there for about 30 days before actually reclaiming the space. To get it back immediately, open
+                Photos → Albums → Recently Deleted and empty it. On iOS 26 that album lives under
+                <em>Collections → Utilities</em> and is protected by Face ID.</p>
+        </div>
+
+        <div class="faq-item">
+            <div class="question">I deleted something by accident. Can I get it back?</div>
+            <p>Yes — Compresso never bypasses the system. Deleted items go to Photos → Albums → Recently Deleted and can
+                be recovered from there for about 30 days.</p>
+        </div>
+
+        <div class="faq-item">
+            <div class="question">Some of my photos and videos refuse to compress. Is that a bug?</div>
+            <p>No — that is deliberate. Certain capture formats carry data beyond the plain image or video, and
+                re-encoding them would silently throw it away. Compresso leaves these untouched rather than damage them:
+                RAW and ProRAW, Portrait photos (they carry a depth map), Cinematic video, spatial photos and video,
+                slow-motion, time-lapse, and animated GIFs. The card tells you which format it detected.</p>
+        </div>
+
+        <div class="faq-item">
+            <div class="question">Does the quality drop?</div>
+            <p>Compression is lossy, so there is a change — the question is whether you can see it. You pick the level
+                (three are available for both photos and videos), and you can compare the original and the compressed
+                copy side by side before deciding to replace anything.</p>
+        </div>
+
+        <div class="faq-item">
+            <div class="question">Why does the app need full Photo Library access?</div>
+            <p>To read your library, save the compressed copy back into it, and delete items when you ask. With limited
+                access it can only see the handful of items you picked, which makes reviewing a library by month
+                impossible.</p>
+        </div>
+
+        <div class="faq-item">
+            <div class="question">Do my photos get uploaded anywhere?</div>
+            <p>No. All compression happens on your device. There is no account, no sign-in, and no server of ours that
+                your media could be sent to. See the <a href="privacy-policy.html">privacy policy</a>.</p>
+        </div>
+
+        <div class="faq-item">
+            <div class="question">The app promised more space than I ended up freeing.</div>
+            <p>The figure before you start is an <em>estimate</em> of what could be reclaimed at the level you picked.
+                What you actually free depends on each file — an item that is already efficiently encoded has little
+                left to give, and Compresso will skip it rather than make it bigger. The total shown after a run is the
+                measured result, not the estimate.</p>
+        </div>
+
+        <div class="faq-item">
+            <div class="question">I bought Pro but it isn't showing up.</div>
+            <p>Tap <strong>Restore Purchases</strong> on the upgrade screen, and check you are signed in with the same
+                Apple Account you purchased with. If it still doesn't appear, email us — include the Apple Account
+                region and roughly when you purchased.</p>
+        </div>
+
+        <div class="faq-item">
+            <div class="question">How do I cancel a subscription?</div>
+            <p>On your device: <em>Settings → your name → Subscriptions → Compresso</em>. Cancelling stops future
+                renewals; Pro stays active until the period you paid for ends.</p>
+        </div>
+
+        <div class="faq-item">
+            <div class="question">Will Compresso clear "System Data" or app caches?</div>
+            <p>No, and no photo tool can. Compresso reclaims space taken by photos and videos only. If your storage is
+                full of something else, <em>Settings → General → iPhone Storage</em> will show you what.</p>
+        </div>
+
+        <div class="contact">
+            <p><strong>Still stuck?</strong> Email <a
+                    href="mailto:ruslanpopesku95@gmail.com">ruslanpopesku95@gmail.com</a></p>
+            <p style="margin-bottom:0">Please include your device model, iOS version, and app version (Settings → About
+                inside the app) — it makes answering much faster.</p>
+        </div>
     </div>
-
-    <div class="faq-item">
-        <div class="question">How does Smart Cleaning work?</div>
-        <p>Smart Cleaning scans your library for duplicates, blurry photos, screenshots, and large video files. It runs
-            entirely on your device and suggests items for deletion, but you always have the final say before anything
-            is removed.</p>
-    </div>
-
-    <div class="faq-item">
-        <div class="question">I bought Premium but it's not showing up.</div>
-        <p>Please tap the <strong>"Restore Purchases"</strong> button on the upgrade screen. Ensure you are signed into
-            the same Apple ID used for purchase.</p>
-    </div>
-
-    <div class="faq-item">
-        <div class="question">Why does the app need Photo Library permission?</div>
-        <p>MediaCleaner needs "Full Access" to your Photo Library to analyze your storage usage and perform the deletion
-            actions you request. Without this permission, the app cannot function.</p>
-    </div>
-
-    <h2>Contact Us</h2>
-    <p>Still have questions? Email us at:</p>
-    <p><a href="mailto:ruslanpopesku95@gmail.com">ruslanpopesku95@gmail.com</a></p>
-    <p>Please include your device model and iOS version for faster assistance.</p>
 </body>
 
 </html>
