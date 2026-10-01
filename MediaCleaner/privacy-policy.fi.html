@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tietosuojakäytäntö - Compresso</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fff;
+            padding: 20px;
+        }
+
+        .container { max-width: 800px; margin: 0 auto; padding: 40px 20px; }
+        h1 { font-size: 32px; margin-bottom: 10px; color: #1a1a1a; }
+        h2 { font-size: 22px; margin-top: 32px; margin-bottom: 12px; color: #1a1a1a; }
+        h3 { font-size: 18px; margin-top: 20px; margin-bottom: 8px; color: #1a1a1a; }
+        p { margin-bottom: 16px; }
+        ul { margin-bottom: 16px; margin-inline-start: 24px; }
+        li { margin-bottom: 8px; }
+        a { color: #0066cc; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .updated { color: #666; font-size: 15px; margin-bottom: 24px; }
+        .highlight { background: #f4f8ff; border-inline-start: 3px solid #0066cc; padding: 14px 18px; margin-bottom: 20px; }
+        .lang { font-size: 15px; margin-bottom: 28px; color: #666; }
+        .lang summary { cursor: pointer; }
+        .lang nav { display: flex; flex-wrap: wrap; gap: 4px 14px; margin-top: 10px; }
+        .lang a[aria-current] { color: #1a1a1a; font-weight: 600; }
+        .note { color: #666; font-size: 14px; margin-top: 40px; padding-top: 16px; border-top: 1px solid #eee; }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <details class="lang">
+            <summary>🌐 Suomi</summary>
+            <nav>
+                <a href="privacy-policy.html" lang="en">English</a>
+                <a href="privacy-policy.ar.html" lang="ar" dir="rtl">العربية</a>
+                <a href="privacy-policy.bg.html" lang="bg">Български</a>
+                <a href="privacy-policy.bn.html" lang="bn">বাংলা</a>
+                <a href="privacy-policy.ca.html" lang="ca">Català</a>
+                <a href="privacy-policy.cs.html" lang="cs">Čeština</a>
+                <a href="privacy-policy.da.html" lang="da">Dansk</a>
+                <a href="privacy-policy.de.html" lang="de">Deutsch</a>
+                <a href="privacy-policy.el.html" lang="el">Ελληνικά</a>
+                <a href="privacy-policy.es.html" lang="es">Español</a>
+                <a href="privacy-policy.et.html" lang="et">Eesti</a>
+                <a href="privacy-policy.fi.html" lang="fi" aria-current="page">Suomi</a>
+                <a href="privacy-policy.fr.html" lang="fr">Français</a>
+                <a href="privacy-policy.gu.html" lang="gu">ગુજરાતી</a>
+                <a href="privacy-policy.he.html" lang="he" dir="rtl">עברית</a>
+                <a href="privacy-policy.hi.html" lang="hi">हिन्दी</a>
+                <a href="privacy-policy.hr.html" lang="hr">Hrvatski</a>
+                <a href="privacy-policy.hu.html" lang="hu">Magyar</a>
+                <a href="privacy-policy.id.html" lang="id">Bahasa Indonesia</a>
+                <a href="privacy-policy.it.html" lang="it">Italiano</a>
+                <a href="privacy-policy.ja.html" lang="ja">日本語</a>
+                <a href="privacy-policy.kn.html" lang="kn">ಕನ್ನಡ</a>
+                <a href="privacy-policy.ko.html" lang="ko">한국어</a>
+                <a href="privacy-policy.lt.html" lang="lt">Lietuvių</a>
+                <a href="privacy-policy.lv.html" lang="lv">Latviešu</a>
+                <a href="privacy-policy.ml.html" lang="ml">മലയാളം</a>
+                <a href="privacy-policy.mr.html" lang="mr">मराठी</a>
+                <a href="privacy-policy.ms.html" lang="ms">Bahasa Melayu</a>
+                <a href="privacy-policy.nl.html" lang="nl">Nederlands</a>
+                <a href="privacy-policy.no.html" lang="no">Norsk</a>
+                <a href="privacy-policy.or.html" lang="or">ଓଡ଼ିଆ</a>
+                <a href="privacy-policy.pa.html" lang="pa">ਪੰਜਾਬੀ</a>
+                <a href="privacy-policy.pl.html" lang="pl">Polski</a>
+                <a href="privacy-policy.pt-BR.html" lang="pt-BR">Português (Brasil)</a>
+                <a href="privacy-policy.pt-PT.html" lang="pt-PT">Português (Portugal)</a>
+                <a href="privacy-policy.ro.html" lang="ro">Română</a>
+                <a href="privacy-policy.ru.html" lang="ru">Русский</a>
+                <a href="privacy-policy.sk.html" lang="sk">Slovenčina</a>
+                <a href="privacy-policy.sl.html" lang="sl">Slovenščina</a>
+                <a href="privacy-policy.sv.html" lang="sv">Svenska</a>
+                <a href="privacy-policy.ta.html" lang="ta">தமிழ்</a>
+                <a href="privacy-policy.te.html" lang="te">తెలుగు</a>
+                <a href="privacy-policy.th.html" lang="th">ไทย</a>
+                <a href="privacy-policy.tr.html" lang="tr">Türkçe</a>
+                <a href="privacy-policy.uk.html" lang="uk">Українська</a>
+                <a href="privacy-policy.ur.html" lang="ur" dir="rtl">اردو</a>
+                <a href="privacy-policy.vi.html" lang="vi">Tiếng Việt</a>
+                <a href="privacy-policy.zh-Hans.html" lang="zh-Hans">简体中文</a>
+                <a href="privacy-policy.zh-Hant.html" lang="zh-Hant">繁體中文</a>
+            </nav>
+        </details>
+
+        <h1>Tietosuojakäytäntö</h1>
+        <p class="updated">Päivitetty viimeksi: 28. syyskuuta 2026</p>
+        <p>Tämä käytäntö kertoo, miten <strong>Compresso</strong> (”sovellus”, ”me”) käsittelee tietojasi. Compresso pakkaa iPhonessasi jo olevat kuvat ja videot, jotta ne vievät vähemmän tilaa.</p>
+        <div class="highlight"><strong>Lyhyesti:</strong> kuvasi ja videosi eivät koskaan poistu laitteeltasi. Ei ole tiliä, ei kirjautumista eikä meidän palvelintamme, jonne niitä voisi lähettää. Sovellus lähettää kuitenkin käyttötilastoja ja kaatumisraportteja, joita ei ole yhdistetty henkilöllisyyteesi (kohta 3), ja yksi kytkin Asetuksissa laittaa ne pois päältä.
+        </div>
+        <h2>1. Kuvasi ja videosi</h2>
+        <p>Compresso tarvitsee pääsyn <strong>kuvakirjastoosi</strong> voidakseen tehdä yhtään mitään. Kaikki, mitä se tällä pääsyllä tekee, tapahtuu paikallisesti laitteellasi:</p>
+        <ul>
+            <li>Se lukee kirjastosi ryhmitelläkseen sen kuukausittain ja arvioidakseen, kuinka paljon tilaa voisi vapautua.</li>
+            <li>Se pakkaa kuvan tai videon, jonka olet valinnut pakattavaksi, ja tallentaa tuloksen takaisin kirjastoosi.</li>
+            <li>Se poistaa sen, minkä olet valinnut poistettavaksi, eli siirtää sen järjestelmän albumiin <em>Äskettäin poistetut</em>, jossa iOS säilyttää sitä noin 30 päivää.</li>
+        </ul>
+        <p><strong>Emme koskaan lataa, siirrä tai kopioi kuviasi ja videoitasi pois laitteeltasi.</strong> Pilvessä ei tapahdu mitään käsittelyä. Kuviisi tallennettu sijainti ja muut metatiedot luetaan vain laitteella, eikä niitä koskaan siirretä.</p>
+        <h2>2. Mitä emme kerää</h2>
+        <ul>
+            <li>Emme nimeä, sähköpostiosoitetta, puhelinnumeroa emmekä syntymäaikaa.</li>
+            <li>Emme tarkkaa sijaintia. Google Analytics päättelee likimääräisen sijainnin (maan ja kaupungin) peitetystä IP-osoitteesta (kohta 3).</li>
+            <li>Emme yhteystietoja, kalentereita, terveystietoja emmekä selaushistoriaa.</li>
+            <li>Emme mainostunnistetta (IDFA). Sovellus ei koskaan pyydä lupaa seurantaan eikä seuraa sinua muiden yritysten sovelluksissa tai verkkosivustoilla.</li>
+            <li>Emme kopioita, pikkukuvia emmekä sisältöä kuvistasi ja videoistasi.</li>
+        </ul>
+        <h2>3. Diagnostiikka, käyttötilastot ja käyttämämme palvelut</h2>
+        <p>Kolme kolmannen osapuolen palvelua saa rajallisesti teknisiä tietoja, jotta sovellus pysyy toimintakunnossa, jotta näemme, miten sitä käytetään, ja jotta ostot toimivat. Yksikään niistä ei saa kuviasi tai videoitasi.</p>
+        <p><strong>Sinun valintasi:</strong> Asetukset → <em>Jaa analytiikka</em> laittaa pois päältä sekä kaatumisraportit (Sentry) että käyttötilastot (Google Analytics). Oletuksena se on päällä.</p>
+        <h3>Sentry (kaatumis- ja suorituskykyraportit)</h3>
+        <p>Palvelua ylläpitää Functional Software, Inc. Kun sovellus kaatuu tai toimii huonosti, lähetetään diagnostiikkaraportti, jossa on virhe, siihen johtaneet toiminnot, laitteesi malli, iOS-versio ja sovelluksen versio.</p>
+        <p>Koska sovellus näyttää henkilökohtaisia kuvia, kaksi Sentryn toimintoa, jotka voisivat tallentaa niitä, on <strong>tarkoituksella poistettu käytöstä</strong> määrityksissämme: kuvakaappausten liittäminen ja näkymähierarkian liittäminen. Tunnisteet, jotka voisivat viitata tiettyyn kohteeseen kirjastossasi, poistetaan ennen raportin lähettämistä. Katso <a href="https://sentry.io/privacy/">Sentryn tietosuojakäytäntö</a>.</p>
+        <h3>Google Analytics for Firebase (käyttötilastot)</h3>
+        <p>Palvelua ylläpitää Google. Se näyttää meille, miten sovellusta käytetään: missä ihmiset juuttuvat ja auttoiko muutos. Sovellus kirjaa tapahtumia, kuten ”antoi pääsyn kuviin”, ”säilytti, poisti tai pakkasi kohteen”, ”viimeisteli siivouksen” tai ”avasi tilausnäkymän”, pienin teknisin tiedoin: mediatyyppi, kohteiden määrä, säästetyt tavut. Google lisää tälle sovelluksen asennukselle satunnaisen tunnisteen, laitteesi mallin, iOS- ja sovellusversion, kielen sekä likimääräisen sijainnin (maan ja kaupungin), jonka se päättelee peitetystä IP-osoitteesta. Google Analytics ei tallenna itse IP-osoitetta. Jos ostat Compresso Pron, myös osto (tuote ja hinta) voidaan kirjata. Tapahtumat eivät koskaan sisällä kuviasi, tiedostonimiä tai mitään, mikä yksilöi kirjastosi kohteen.</p>
+        <p>Jos tulit Compressoon App Storen mainoksen kautta, Applen AdServices-kehys kertoo meille, mikä kampanja ja mikä hakusana johtivat asennukseen. Siihen ei käytetä mainostunnistetta.</p>
+        <p>Google käsittelee näitä tietoja tarjotakseen meille Analytics-palvelun. Valinnaiset asetukset, joilla Google saisi käyttää niitä myös omiin tuotteisiinsa, vertailuihin tai myyntiin, ovat pois päältä, samoin Google signals. Katso <a href="https://policies.google.com/privacy?hl=fi">Googlen tietosuojakäytäntö</a> ja <a href="https://policies.google.com/technologies/partner-sites?hl=fi">miten Google käyttää tietoja sovelluksista, jotka käyttävät sen palveluja</a>.</p>
+        <h3>RevenueCat (ostot)</h3>
+        <p>Palvelua ylläpitää RevenueCat, Inc. Se vahvistaa Compresso Pro -ostosi ja pitää siitä kirjaa. Se saa laitteellasi luodun anonyymin tunnisteen ja Applen toimittamat ostotiedot, ei koskaan nimeäsi tai sähköpostiosoitettasi. Se saa myös asennuksesi Google Analytics -tunnisteen, jotta näemme, mistä sovellusversiosta tai mainoskampanjasta osto tuli. Katso <a href="https://www.revenuecat.com/privacy">RevenueCatin tietosuojakäytäntö</a>.</p>
+        <h3>Apple</h3>
+        <p>Apple käsittelee ostot App Storen kautta. Emme koskaan näe tai saa maksutietojasi. Sitä, miten Apple käsittelee tapahtuman, koskee <a href="https://www.apple.com/legal/privacy/">Applen tietosuojakäytäntö</a>.</p>
+        <h2>4. Miten tämä vastaa App Storen tietosuojamerkintöjä</h2>
+        <p>Kaikki alla oleva kerätään <em>ilman</em> yhteyttä henkilöllisyyteesi, eikä mitään siitä käytetä seurantaan.</p>
+        <ul>
+            <li><strong>Tunnisteet</strong> (laitteen tunniste: asennuksen satunnainen tunniste) — analytiikkaan.</li>
+            <li><strong>Käyttötiedot</strong> (vuorovaikutus tuotteen kanssa) — analytiikkaan.</li>
+            <li><strong>Sijainti</strong> (likimääräinen sijainti, päätelty peitetystä IP-osoitteesta) — analytiikkaan.</li>
+            <li><strong>Diagnostiikka</strong> (kaatumistiedot, suorituskykytiedot, muut diagnostiikkatiedot) — sovelluksen toiminnan ylläpitoon ja analytiikkaan.</li>
+            <li><strong>Ostot</strong> (ostohistoria) — ostojen hallintaan ja analytiikkaan.</li>
+            <li><strong>Kuvat ja videot</strong> — niitä käsitellään laitteellasi, <strong>niitä ei koskaan kerätä</strong>.</li>
+        </ul>
+        <h2>5. Tietojen säilytys ja poistaminen</h2>
+        <p>Compresson omat tiedot (mitkä kuukaudet olet käynyt läpi, mitä olet pakannut, kuinka paljon tilaa olet vapauttanut) tallennetaan laitteellesi ja omalle yksityiselle iCloud-tilillesi, jotta edistymisesi seuraa sinua laitteelta toiselle. Meillä ei ole pääsyä näihin iCloud-tietoihin.</p>
+        <p>Käyttötilastot (kohta 3) on sidottu asennuksesi satunnaiseen tunnisteeseen, ei nimeesi, sähköpostiosoitteeseesi tai Apple-tiliisi. Google Analytics säilyttää niitä 14 kuukautta. Säilytämme myös kopion samoista tapahtumista omassa Google Cloud -projektissamme EU:ssa voidaksemme verrata sovellusversioiden suoriutumista ajan myötä; myös tämä kopio poistetaan 14 kuukauden kuluttua.</p>
+        <p>Sovelluksen poistaminen poistaa sen paikalliset tiedot, ja Asetukset → <em>Jaa analytiikka</em> estää uusien tietojen lähettämisen. Koska tilastoja ei ole yhdistetty henkilöllisyyteesi, emme yleensä pysty löytämään omiasi nimesi tai sähköpostiosoitteesi perusteella, mutta voit aina kirjoittaa ja kysyä.</p>
+        <h2>6. Lapset</h2>
+        <p>Compressoa ei ole suunnattu alle 13-vuotiaille lapsille, emmekä tietoisesti kerää heiltä mitään tietoja.</p>
+        <h2>7. Muutokset</h2>
+        <p>Jos tämä käytäntö muuttuu, yllä oleva ”päivitetty viimeksi” -päivämäärä muuttuu sen mukana, ja voimassa oleva versio julkaistaan aina tässä osoitteessa.</p>
+        <h2>8. Yhteystiedot</h2>
+        <p>Kysymykset tästä käytännöstä: <a href="mailto:ruslanpopesku95@gmail.com">ruslanpopesku95@gmail.com</a></p>
+
+        <p class="note">Tämä on käännös englanninkielisestä alkuperäisestä. Jos ne eroavat toisistaan, <a href="privacy-policy.html">englanninkielinen versio</a> on ratkaiseva.</p>
+    </div>
+</body>
+
+</html>
